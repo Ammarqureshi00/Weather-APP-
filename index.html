@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <div class="header">
+            <p class="eyebrow">Live Weather Dashboard</p>
+            <h1>Weather App</h1>
+            <p class="subtitle">Check the weather for any city in seconds.</p>
+        </div>
+
+        <form class="search-box" id="searchForm">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn" type="submit">Search</button>
+        </form>
+
+        <p id="statusMessage" class="status-message">Enter a city to see its weather.</p>
+
+        <div class="weather-card">
+            <div class="weather-top">
+                <div>
+                    <h2 id="city">City</h2>
+                    <p id="date">--</p>
+                </div>
+                <div id="weatherIcon" class="weather-icon">🌤️</div>
+            </div>
+
+            <p id="temp">0°C</p>
+            <p id="description">Weather Description</p>
+
+            <div class="details">
+                <div>
+                    <h3>Humidity</h3>
+                    <p id="humidity">0%</p>
+                </div>
+
+                <div>
+                    <h3>Wind</h3>
+                    <p id="wind">0 km/h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/scripts2.js"></script>
+</body>
+</html>
